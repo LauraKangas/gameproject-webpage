@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Supper&shy;Star &shy;mobile&shy;game</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
+        
+</head>
+
+<body>
+	<style>
+        /* game banner container */
+		.banner {
+			background-color: rgb(193, 243, 226);
+			border-style: dotted;
+		}
+        /* button container */
+		.btn {
+			background-color: rgb(219, 255, 243);
+			border-style: dotted;
+		}
+        /* Recipe name picture */
+        .recipePicture { 
+            padding: 4%;
+            display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+        }
+        /* Recipe container */
+        .recipe {
+            background-color: rgb(193, 243, 226);
+			border-style: dotted;
+			padding: 2%;
+        }
+        .recipe p {
+            text-align: center; 
+        }
+
+        /* partner container */
+        .Partners header {
+			padding: 2%;
+            text-align: center;
+			font-size: larger;
+			font-family: 'Times New Roman';
+			font-weight: bolder;
+		}
+
+	  </style>
+
+	  <!-- Game banner container -->
+	<div class="container">
+		<div class="banner">
+			<div class="row">
+				<img src="../logot/BanneriFinal.png" 
+            	    alt="banneri" />
+			</div>
+		</div>
+	</div>
+
+	<!-- Buttons for recipe and english site -->
+	<div class="container">
+		<div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+				<div class="p-4 bd-highlight">
+					<a href="https://webpages.tuni.fi/21tiko3e/SupperStar" 
+					class="btn btn-outline-success" 
+					tabindex="-1" 
+					role="button" 
+					aria-disabled="true">Home</a>
+				</div>	
+				<div class="p-4 bd-highlight">
+					<a href="https://webpages.tuni.fi/21tiko3e/Recipes" 
+						class="btn btn-outline-success"
+						tabindex="-1" 
+						role="button" 
+						aria-disabled="true">Recipes</a>
+				</div>
+				<div class="p-4 bd-highlight">
+					<a href="https://webpages.tuni.fi/21tiko3e/SupperstarENG" 
+						class="btn btn-outline-success"
+						tabindex="-1" 
+						role="button" 
+						aria-disabled="true">In Finnish</a>
+				</div>
+		</div>
+	</div>
+
+    <!-- recipe picture container -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="recipePicture">
+                    <img src="../logot/reseptilogot/juuressosekeittoENG.png"
+                        style="width: 350px; height: 250;"/>
+                </div> 
+            </div>
+            
+        </div> 
+    </div>
+
+    <!-- recipe container -->
+    <div class="container">
+        <div class="recipe">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        300 g starchy potatoes<br>
+                        200 g carrots 100 g celeriac 100 g parsnip 6 dl vegetable stock<br>
+                        1 dl heavy cream or milk<br>                    
+                        2 tsp white pepper<br>                       
+                        Salt<br>
+                        <br>
+                        1. Peel the potatoes, carrots, celeriac and parsnip. Chop all the vegetables roughly the same size for even cooking.<br>                       
+                        2. Add the vegetable stock and the vegetables to a large pot and cook until the vegetables are tender and cooked through.<br>                       
+                        3. Once the vegetables are cooked, puree the soup with an immersion blender or a food processor until smooth and creamy. Be careful, the hot soup splashes easily!<br>                       
+                        4. Stir in the heavy cream or milk and taste for seasoning. If the soup feels too thick, you can add more heavy cream/ milk.<br> 
+                    </p>
+                </div>
+            </div>
+        </div>       
+    </div>
+
+    <!-- partner container -->
+    <div class="container">
+		<div class="Partners">
+			<div class="row">
+				<div class="col-12">
+					<header>
+						Special thanks to Emma Uronen for creating the recipes for the game.
+					</header>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

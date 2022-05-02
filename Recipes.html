@@ -16,16 +16,18 @@
 
 <body>
 	<style>
-
+        /* banner container */
 		.banner {
 			background-color: rgb(193, 243, 226);
 			border-style: dotted;
 		}
 
+        /* button container */ 
 		.btn {
 			background-color: rgb(219, 255, 243);
 		}
 
+        /* season containers */
         .spring {
             padding: 2%;
         }
@@ -46,16 +48,27 @@
             border-style: dotted;
         }
 
+        .seasonPicture {
+            display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+        }
+
+        /* txtPartners container */ 
         .txtPartners {
 			padding: 1%;
 			text-align: center;
 			font-size: larger;
 			font-family: 'Courier New';
-            font-weight: bold;
 		}
 
+        .txtPartners header {
+            font-weight: bolder;
+        }
+
+        /* partners container */
 		.Partners header {
-            background-color: rgb(193, 243, 226);
 			padding: 2%;
             text-align: center;
 			font-size: larger;
@@ -65,16 +78,17 @@
 
 	  </style>
 
-
+    <!-- banner container -->
 	<div class="container">
 		<div class="banner">
 			<div class="row">
 				<img src="logot/BanneriFinal.png" 
-            	    alt="T&auml;h&auml;n tulee pelin banneri" />
+            	    alt="banneri"/>
 			</div>
 		</div>
 	</div>
 
+    <!-- button container -->
 	<div class="container">
 		<div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
 				<div class="p-4 bd-highlight">
@@ -101,34 +115,39 @@
 		</div>
 	</div>
 
+    <!-- season containers -->
     <div class="container">
         <div class="spring">
             <div class="d-lg-flex flex-row bd-highlight mb-3 justify-content-center">
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/juuressosekeitto.png"
-                            style="max-width: 300px; max-height: 300px; border-style: dotted;"
-                            title="spring-dish-one"
-                            alt="juuressosekeitto" />
-                    </a>
+                    <div class="seasonPicture">
+                         <a href="">
+                          <img src="logot/reseptilogot/juuressosekeitto.png"
+                                style="max-width: 300px; max-height: 300px; border-style: dotted;"
+                                title="spring-dish-one"
+                                alt="juuressosekeitto" />
+                        </a> 
+                    </div>   
                 </div>
-
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/silakkalaatikko.png"
-                            style="max-width: 300px; max-height: 300px; border-style: dotted;"
-                            title="spring-dish-two"
-                            alt="silakkalaatikko" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/silakkalaatikko.png"
+                                style="max-width: 300px; max-height: 300px; border-style: dotted;"
+                                title="spring-dish-two"
+                                alt="silakkalaatikko" />
+                        </a>
+                    </div>
                 </div>
-
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/mehukiisseli.png" 
-                            style="max-width: 300px; max-height: 300px; border-style: dotted;"
-                            title="spring-dish-three" 
-                            alt="mehukiisseli" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/mehukiisseli.png" 
+                                style="max-width: 300px; max-height: 300px; border-style: dotted;"
+                                title="spring-dish-three" 
+                                alt="mehukiisseli" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,30 +157,34 @@
         <div class="summer">
             <div class="d-lg-flex flex-row bd-highlight mb-3 justify-content-center">
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/tomaattikeitto.png"
-                            style="max-width: 300px; max-height: 300px;"
-                            title="summer-dish-one"
-                            alt="tomaattikeitto" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/tomaattikeitto.png"
+                                style="max-width: 300px; max-height: 300px;"
+                                title="summer-dish-one"
+                                alt="tomaattikeitto" />
+                        </a>
+                    </div>
                 </div>
-
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/haukipihvit-uudetperunat.png"
-                            style="max-width: 300px; max-height: 300px;"
-                            title="summer-dish-two"
-                            alt="haukipihvit-uudetperunat" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/haukipihvit-uudetperunat.png"
+                                style="max-width: 300px; max-height: 300px;"
+                                title="summer-dish-two"
+                                alt="haukipihvit-uudetperunat" />
+                        </a>
+                    </div>
                 </div>
-                
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/mannamarjavanukas.png" 
-                            style="max-width: 300px; max-height: 300px;"
-                            title="summer-dish-three" 
-                            alt="mannamarjavanukas" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/mannamarjavanukas.png" 
+                                style="max-width: 300px; max-height: 300px;"
+                                title="summer-dish-three" 
+                                alt="mannamarjavanukas" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,30 +194,34 @@
         <div class="Autumn">
             <div class="d-lg-flex flex-row bd-highlight mb-3 justify-content-center">
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/porkkana-rosmariinikeitto.png"
-                            style="max-width: 300px; max-height: 300px; border-style: dotted;"
-                            title="autumn-dish-one"
-                            alt="porkkana-rosmariinikeitto" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/porkkana-rosmariinikeitto.png"
+                                style="max-width: 300px; max-height: 300px; border-style: dotted;"
+                                title="autumn-dish-one"
+                                alt="porkkana-rosmariinikeitto" />
+                        </a>
+                    </div>
                 </div>
-
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/kana-porkkanapullat.png"
-                            style="max-width: 300px; max-height: 300px; border-style: dotted;"
-                            title="autumn-dish-two"
-                            alt="kana-porkkanapullat" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/kana-porkkanapullat.png"
+                                style="max-width: 300px; max-height: 300px; border-style: dotted;"
+                                title="autumn-dish-two"
+                                alt="kana-porkkanapullat" />
+                        </a>
+                    </div>
                 </div>
-                
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/hunajapaarynat.png" 
-                            style="max-width: 300px; max-height: 300px; border-style: dotted;"
-                            title="autumn-dish-three" 
-                            alt="hunajapaarynat" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/hunajapaarynat.png" 
+                                style="max-width: 300px; max-height: 300px; border-style: dotted;"
+                                title="autumn-dish-three" 
+                                alt="hunajapaarynat" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -204,58 +231,66 @@
         <div class="winter">
             <div class="d-lg-flex flex-row bd-highlight mb-3 justify-content-center">
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/borssi.png"
-                            style="max-width: 300px; max-height: 300px;"
-                            title="winter-dish-one"
-                            alt="borssi" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/borssi.png"
+                                style="max-width: 300px; max-height: 300px;"
+                                title="winter-dish-one"
+                                alt="borssi" />
+                        </a>
+                    </div>
                 </div>
-
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/harkiskaalikaaryleet.png"
-                            style="max-width: 300px; max-height: 300px;"
-                            title="winter-dish-two"
-                            alt="harkiskaalikaaryleet" />
-                    </a>
-                </div>
-                
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/harkiskaalikaaryleet.png"
+                                style="max-width: 300px; max-height: 300px;"
+                                title="winter-dish-two"
+                                alt="harkiskaalikaaryleet" />
+                        </a>
+                    </div>
+                </div> 
                 <div class="p-2 bd-highlight">
-                    <a href="">
-                        <img src="logot/reseptilogot/omenakaura.png" 
-                            style="max-width: 300px; max-height: 300px;"
-                            title="winter-dish-three" 
-                            alt="omenakaura" />
-                    </a>
+                    <div class="seasonPicture">
+                        <a href="">
+                            <img src="logot/reseptilogot/omenakaura.png" 
+                                style="max-width: 300px; max-height: 300px;"
+                                title="winter-dish-three" 
+                                alt="omenakaura" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- txtPartners container -->
     <div class="container">
 		<div class="txtPartners">
 			<div class="row">
 				<div class="col-12 justify-content-center">
-                    <p>
+                    <header>
                         Planetaarisella ruokavaliolla on seuraavat tavoitteet:<br>
+                    </header>
+                    <p>
                         <br>
                         - taata riittävä terveellinen ravitsemus maailman 10 miljardille ihmiselle vuonna 2050<br>
                         - vähentää huomattavasti huonon ruokavalion aiheuttamien kuolemantapausten määrää maailmanlaajuisesti<br>
                         - olla ympäristölle kestävä<br>
                         <br>
-                        Siirtyminen planetaariseen ruokavalioon on välttämätöntä Pariisin ilmastosopimuksen ja YK:n kestävän kehityksen tavoitteiden (Agenda 2030) saavuttamiseksi.
+                        Siirtyminen planetaariseen ruokavalioon on välttämätöntä Pariisin ilmastosopimuksen ja YK:n kestävän kehityksen tavoitteiden (Agenda 2030) saavuttamiseksi.<br>
+                        - wikipedia/planetaarinen ruokavalio
                     </p>
 				</div>
 			</div>
 		</div>
 	</div>
 
+    <!-- partners container -->
     <div class="container">
 		<div class="Partners">
 			<div class="row">
-				<div class="col-12"
-                    style="border-style: dotted;">
+				<div class="col-12">
 					<header>
 						Erityiskiitos Emma Uroselle joka loi reseptit peliin.
 					</header>
