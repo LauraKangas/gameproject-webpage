@@ -24,36 +24,23 @@
 
 		.btn {
 			background-color: rgb(219, 255, 243);
+			border-style: dotted;
 		}
 
 		.trailerANDinfo {
-			padding: 8%;
+			padding: 2%;
 		}
 		
-		.youtube-embed {
-		  position: relative;
-		  overflow: hidden;
-		  width: 100%;
-		}
-
-		.youtube-embed::after {
-		  padding-top: 56.25;
-		  display: block;
-		  content: '';
-		}
-
-		.youtube-embed iframe {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
+		.gameIntroduction header {
+			text-align: center;
+			font-size: large;
+			font-weight: bolder;
 		}
 
 		.gameIntroduction p {
 			text-align: center;
 			}
-
+			
 		.team {
 			background-color: rgb(193, 243, 226);
 			border-style: dotted;
@@ -73,7 +60,7 @@
 		}
 
 		.partners {
-			padding: 1%;
+			padding: 2%;
 		}
 
 	  </style>
@@ -83,7 +70,7 @@
 		<div class="banner">
 			<div class="row">
 				<img src="logot/BanneriFinal.png" 
-            	    alt="T&auml;h&auml;n tulee pelin banneri" />
+            	    alt="banneri" />
 			</div>
 		</div>
 	</div>
@@ -92,7 +79,7 @@
 	<div class="container">
 		<div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
 				<div class="p-4 bd-highlight">
-					<a href="/" 
+					<a href="https://webpages.tuni.fi/21tiko3e/" 
 					class="btn btn-outline-success" 
 					tabindex="-1" 
 					role="button" 
@@ -119,22 +106,38 @@
 	<div class="container">
 		<div class="trailerANDinfo">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-md-6 justify-content-center">
 					<div class='youtube-embed'>
-						<iframe src='https://www.youtube.com/embed/QILiHiTD3uc'
-							frameborder='0'
-							allowfullscreen>
+						<iframe width="560" height="315" 
+								src="https://www.youtube.com/embed/TOy7xpKjAac" 
+								title="YouTube video player" 
+								frameborder="0" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+								allowfullscreen>
 						</iframe>
 					</div>
 				</div> 
-
-				<div class="col-6">
+				<div class="col-md-6">
 					<div class="gameIntroduction">
-						<p> Olet p&auml;&auml;tynyt py&ouml;ritt&auml;m&auml;&auml;n FUSILLI hankkeen ravintolaa. <br>
-						Sovellat kausittain vaihtuvia tuotteita erilaisiin resepteihin <br>
-						ja yrit&auml;t luoda ne aikataulussa.<br>
-						Oletko valmis pit&auml;m&auml;&auml;n hauskaa ja oppimaan uutta?
+						 <header>Tervetuloa paikalliseen SupperStar &ndash;ravintolaasi! <br></header>
+							<br>
+							<p>	Oletko valmis asettamaan kokinhattusi p&auml;&auml;h&auml;n ja liittym&auml;&auml;n eloisaan SupperStar &ndash;keitti&ouml;&ouml;n
+							uusien kokkausseikkailujen &auml;&auml;relle? SupperStar &ndash;keitti&ouml;ss&auml; p&auml;&auml;set valmistamaan monipuolisesti eri annoksia, k&auml;ytt&auml;en parhaita,
+							paikallisia suomalaisia tuotteita. Supperstar &ndash;ravintolassa asiakas ei koskaan j&auml;&auml; n&auml;lk&auml;iseksi, joten olethan valmis tarjoilemaan
+							niin montaa asiakasta kuin vain pystyt, ennen kuin ty&ouml;p&auml;iv&auml;si p&auml;&auml;ttyy. <br>
+							<br>
+							Toivomme n&auml;kev&auml;mme sinut SupperStar &ndash;ravintolassamme pian! <br>
 						</p>
+					</div>
+						<div class="mx-auto"
+							style="max-width: 100%; display: flex; justify-content: center;">
+							<a href="">
+								<img 
+									src="logot/google-play-badge.png" 
+									style="max-width: 225px;"
+									alt="Google-Play-badge" />
+							</a>
+						</div>	
 					</div>
 				</div>
 			</div>
@@ -144,46 +147,50 @@
 	<!-- team information and pictures container -->
 	<div class="container">
 		<div class="team">
-			<div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
-				<div class="p-2 bd-highlight">
-					<p>
-						Scrum master:<br />Laura Kangas<br />laura.kangas@tuni.fi
-					</p>
+			<div class="d-lg-flex flex-row bd-highlight mb-3 justify-content-center">
+				<div>
+					<div class="p-2 bd-highlight">
+						<p>
+							Scrum master:<br />Laura Kangas<br />laura.kangas@tuni.fi
+						</p>
+							
 						<img src="team_pictures/laura.jpg" 
-						class="img-fluid img-thumbnail"
-						style="max-width: 225px; height: 280px;"
-						alt="Laura Kangas" />
+							class="img-fluid img-thumbnail"
+							style="max-width: 225px; height: 280px;"
+							alt="Laura Kangas" />
+					</div>
 				</div>
-
 				<div class="p-2 bd-highlight">
 					<p>
 						Peliohjelmointi:<br />Johan Lummeranta<br />johan.lummeranta@tuni.fi
 					</p>
-						<img src="team_pictures/johan.jpg" 
-							class="img-fluid img-thumbnail"
-							style="max-width: 225px; height: 280px;"
-							alt="Johan Lummeranta" />
+						
+					<img src="team_pictures/johan.jpg" 
+						class="img-fluid img-thumbnail"
+						style="max-width: 225px; height: 280px;"
+						alt="Johan Lummeranta" />
 				</div>
 
 				<div class="p-2 bd-highlight">
 					<p>
 						Peliohjelmointi:<br />Daniella Azouer<br />daniella.azouer@tuni.fi
 					</p>
-						<img src="team_pictures/janeDoe.jpg"
-							class="img-fluid img-thumbnail"
-							style="max-width: 225px; height: 280px;"
-							alt="Daniella Azouer" />
+						
+					<img src="team_pictures/daniella2.jpg"
+						class="img-fluid img-thumbnail"
+						style="max-width: 225px; height: 280px;"
+						alt="Daniella Azouer" />
 				</div>
 
 				<div class="p-2 bd-highlight">
 					<p>
-						Grafiikka:<br />Lotta tuominen<br />lotta.r.tuominen@tuni.fi
+						Grafiikka:<br />Lotta Tuominen<br />lotta.r.tuominen@tuni.fi
 					</p>
-						<img src="team_pictures/Lotta.jpg" 
-							class="img-fluid img-thumbnail"
-							style="max-width: 225px; height: 280px;"
-							alt="Lotta Tuominen" />
-
+				
+					<img src="team_pictures/Lotta.jpg" 
+						class="img-fluid img-thumbnail"
+						style="max-width: 225px; height: 280px;"
+						alt="Lotta Tuominen" />
 				</div>
 
 				<div class="p-2 bd-highlight">
@@ -197,11 +204,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div>
-
-
 	</div>
 
 	<!-- partners txt container -->
@@ -221,7 +223,7 @@
 	<div class="container">
 		<div class="partners">
 			<div class="">
-				<div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+				<div class="d-lg-flex flex-row bd-highlight mb-3 justify-content-center">
 					<div class="p-2 bd-highlight">
 						<a href="https://www.tuni.fi/fi/tule-opiskelemaan/tietojenkasittelyn-tutkinto-ohjelma">
 							<img src="logot/tiko_logo_musta_fin.png"
@@ -253,5 +255,4 @@
 		</div>
 	</div>
 </body>
-
 </html>
