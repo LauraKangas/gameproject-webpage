@@ -63,6 +63,26 @@
 			padding: 2%;
 		}
 
+		.youtube-embed {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+		}
+
+		.youtube-embed::after {
+			padding-top: 56.25%;
+			display: block;
+			content: '';
+		}
+
+		.youtube-embed iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
 	  </style>
 
 	  <!-- Game banner container -->
@@ -79,21 +99,21 @@
 	<div class="container">
 		<div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
 				<div class="p-4 bd-highlight">
-					<a href="https://webpages.tuni.fi/21tiko3e/" 
+					<a href="https://webpages.tuni.fi/21tiko3e/SupperStar" 
 					class="btn btn-outline-success" 
 					tabindex="-1" 
 					role="button" 
 					aria-disabled="true">Etusivu</a>
 				</div>	
 				<div class="p-4 bd-highlight">
-					<a href="/SupperStarRecipes" 
-						class="btn btn-outline-success" 
+					<a href="https://webpages.tuni.fi/21tiko3e/Recipes" 
+						class="btn btn-outline-success"
 						tabindex="-1" 
 						role="button" 
 						aria-disabled="true">Reseptit</a>
 				</div>
 				<div class="p-4 bd-highlight">
-					<a href="/SupperstarENG" 
+					<a href="https://webpages.tuni.fi/21tiko3e/SupperstarENG" 
 						class="btn btn-outline-success"
 						tabindex="-1" 
 						role="button" 
@@ -108,12 +128,14 @@
 			<div class="row">
 				<div class="col-md-6 justify-content-center">
 					<div class='youtube-embed'>
-						<iframe width="560" height="315" 
-								src="https://www.youtube.com/embed/TOy7xpKjAac" 
-								title="YouTube video player" 
-								frameborder="0" 
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-								allowfullscreen>
+						<!-- <iframe width="560" height="315" -->
+						<iframe
+							src="https://www.youtube.com/embed/TOy7xpKjAac" 
+							title="YouTube video player" 
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+							allowfullscreen
+						>
 						</iframe>
 					</div>
 				</div> 
@@ -147,7 +169,8 @@
 	<!-- team information and pictures container -->
 	<div class="container">
 		<div class="team">
-			<div class="d-lg-flex flex-row bd-highlight mb-3 justify-content-center">
+			<div class="d-lg-flex flex-row bd-highlight mb-3 justify-content-center"
+			style="justify-content: center;">
 				<div>
 					<div class="p-2 bd-highlight">
 						<p>
@@ -156,7 +179,7 @@
 							
 						<img src="team_pictures/laura.jpg" 
 							class="img-fluid img-thumbnail"
-							style="max-width: 225px; height: 280px;"
+							style="max-width: 225px; height: 280px; margin: auto;"
 							alt="Laura Kangas" />
 					</div>
 				</div>
